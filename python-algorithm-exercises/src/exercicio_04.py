@@ -5,8 +5,6 @@ def selection_sort(numbers):
     n = len(numbers)
     for index in range(n - 1):
         min_element_index = index
-        # print(min_ele_index)
-        # print(min_ele_index, 'min element')
         for search_index in range(index + 1, n):
             # print(search_index, 'search index')
             # print(numbers[search_index], 'n')
@@ -53,11 +51,39 @@ n4 = n1
 n5 = n2 == n4
 # print(n5)
 
-array = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana", "Gustavo"]
+array = [
+    "Lucas",
+    "Nádia",
+    "Fernanda",
+    "Cairo",
+    "Joana",
+    "Gustavo",
+    "Alcantara",
+    "Sophia",
+    "Gabriel",
+    "Isabella",
+    "Enzo",
+    "Laura",
+    "Pedro",
+    "Julia",
+    "Mateus",
+    "Valentina",
+    "Lucca",
+    "Manuela",
+    "Davi",
+    "Alice",
+    "Arthur",
+    "Heloisa",
+    "Miguel",
+    "LaraCroft"
+]
+
+# Finds by longest name
 
 
 def longest_name(names: list):
     bigger_name = names[0]
+    # print(bigger_name)
     for name in names:
         if len(name) > len(bigger_name):
             bigger_name = name
@@ -65,4 +91,20 @@ def longest_name(names: list):
 
 
 result = longest_name(array)
+# print(result)
+
+# Finds by first letter
+
+
+def names_with_f(names: list[int], letter: int):
+    letter.lower()
+    name_with_letter = []
+    for name in names:
+        if name[0] == letter:
+            name_with_letter.append(name)
+
+    return name_with_letter
+
+
+result = names_with_f(array, 'L')
 print(result)

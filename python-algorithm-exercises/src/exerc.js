@@ -54,3 +54,18 @@
 // const valor = 80;
 // const resultado = change(valor, moedas)
 // console.log(resultado)
+const obj1 = {
+  name: 'Rogerinho'
+};
+
+const obj2 = {
+  name: 'Rogerinho'
+};
+
+const obj3 = obj1;
+const a = 'Rogerinho';
+const b = 'Rogerinho';
+
+console.log(a === b);
+console.log(obj1 === obj2)
+console.log(obj1 === obj3);
